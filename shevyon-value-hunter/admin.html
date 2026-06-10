@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHEvyon Value Hunter | מנהלת</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="admin-page">
+  <div class="bgp"></div>
+
+  <div class="admin-wrap">
+    <header class="admin-header">
+      <div class="admin-header-title">🎯 SHEvyon Value Hunter — מסך מנהלת</div>
+      <div class="admin-header-actions">
+        <span id="adminSummary"></span>
+        <button class="kbtn" id="btnRefresh">🔄 רענון</button>
+        <button class="kbtn danger" id="btnClear">🗑️ איפוס</button>
+        <a href="index.html">← חזרה למשחק</a>
+      </div>
+    </header>
+
+    <section class="admin-stage">
+      <div>
+        <h2>היכרות עם החברות</h2>
+        <div id="adminCompanyCards" class="admin-companies"></div>
+      </div>
+
+      <div class="admin-control">
+        <h2>פתיחת שלבים</h2>
+        <div id="stepStatus" class="step-status"></div>
+        <div id="stepButtons" class="step-buttons"></div>
+      </div>
+    </section>
+
+    <section class="admin-lesson-card" id="lessonCard"></section>
+
+    <section class="admin-main-row">
+      <div class="admin-table-wrap">
+        <div id="adminTableWrap"></div>
+      </div>
+
+      <div class="admin-qr-panel">
+        <div class="admin-qr-title">📱 כניסה למשחק</div>
+        <div class="qr-placeholder">QR</div>
+        <div class="admin-muted">אפשר להחליף כאן לתמונת QR אמיתית בהמשך.</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
